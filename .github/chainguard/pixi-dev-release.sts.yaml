@@ -1,0 +1,7 @@
+issuer: https://token.actions.githubusercontent.com
+# For now any branch of prefix-dev/pixi may publish; tighten to refs/heads/main later.
+subject_pattern: repo:prefix-dev/pixi:ref:refs/heads/.*
+claim_pattern:
+  job_workflow_ref: prefix-dev/pixi/\.github/workflows/dev-release\.yml@refs/heads/.*
+permissions:
+  contents: write
